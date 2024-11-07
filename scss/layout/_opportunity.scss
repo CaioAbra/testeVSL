@@ -1,0 +1,65 @@
+.opportunity-card {
+    background-color: $card-bg-color;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $text-color;
+    }
+
+    .pairing {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $text-color;
+    }
+
+    .opportunity-btn {
+        color: #FFFFFF;
+        border: none;
+        padding: 5px 20px;
+        font-size: 1rem;
+        margin-top: 10px;
+        border-radius: 6px;
+        font-weight: 500;
+
+        &.green {
+            background-color: #0DBB7C;
+        }
+
+        &.red {
+            background-color: #D92643;
+        }
+    }
+
+    .details {
+        font-size: 14px;
+        color: $text-color;
+        font-weight: 500;
+        text-align: left;
+
+        &.nophoto {
+            text-align: center !important;
+        }
+
+        .infomOpportunity {
+            font-weight: 100 !important;
+        }
+
+
+
+        p {
+            margin: 0;
+        }
+
+        .signal-photo {
+            margin-top: 10px;
+            width: 100px; // Ajuste de largura para a foto do sinal
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid lighten($primary-color, 20%);
+        }
+    }
+}
