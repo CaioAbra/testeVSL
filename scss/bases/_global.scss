@@ -50,10 +50,14 @@ body {
 }
 
 .section-text {
-    h2 {
+    h3 {
         font-family: 'Open Sauce Two';
         font-weight: 700;
         color: #FFFFFF;
+
+        @media screen and (max-width:768px) {
+            font-size: 1.7rem;
+        }
     }
 }
 
@@ -117,14 +121,26 @@ body {
 }
 
 .video-placeholder {
-    background-color: #333; // Cor de fundo do vídeo
+    background-color: #1A1A1A; // Cor de fundo do vídeo
     border-radius: 10px;
     margin: 20px 0;
+    place-self: center;
     width: 100%;
-    height: 200px; // Altura do vídeo, ajuste conforme necessário
+    height: 222px;
+    gap: 0px;
+    opacity: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1.27px solid; // Definição da largura da borda
+    border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.21) 100%); // Gradiente da borda
+    border-image-slice: 1; // Necessário para que o gradiente funcione como borda
+
+    @media screen and (min-width:1024px) {
+        width: 752px;
+        height: 444.71px;
+    }
+
 
     .play-icon {
         font-size: 3rem; // Tamanho do ícone de play
@@ -134,15 +150,13 @@ body {
     &::after {
         content: "";
         position: absolute;
-        top: 40%;
+        top: 25%; // Ajuste conforme necessário para posicionar a sombra
         left: 0;
         width: 100%;
-        height: 3rem;
+        height: 56%; // Altura da sombra
         border-radius: 10px;
         background: linear-gradient(180deg, #B2FF8D -24.51%, #02D085 75.83%, #02D085 200.98%);
         filter: blur(64px);
-        z-index: -1;
-
-
+        z-index: -1; // Coloca a sombra atrás do .video-placeholder
     }
 }
