@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Caio Matheus dos Santos Abra">
 
-    <title>Nexus</title>
+    <title></title>
 
     <!-- Favicon -->
     <link rel="icon" href="./assets/icons/logo.ico" type="image/x-icon">
@@ -26,49 +26,46 @@
 </head>
 
 <body>
-    <div class="container mt-5">
-        <!-- Header com o Logotipo -->
-        <div class="text-center mb-4">
-            <img src="assets/icons/logo.png" alt="Nexus Logo" class="logo">
-        </div>
-
-        <!-- Card de Aguardando Oportunidade -->
-        <div class="card opportunity-card col-md-7 col-lg-6 col-xl-5 mx-auto">
-            <section class="section-text text-center mb-5">
-                <p>
-                    Com um toque, ele transforma R$ 100 em R$ 500! Conheça o 'Agente Financeiro' que já ajuda
-                    brasileiros a lucrar em dólar sem entender nada de Bolsa de Valores.
-                </p>
-            </section>
-
-            <!-- Seção de Vídeo -->
-            <section class="section-video text-center mb-5">
-                <h3>
-                    Assista ao Vídeo
-                </h3>
-
-                <div class="embed-responsive embed-responsive-16by9">
-                    <!-- <iframe class="embed-responsive-item" src="https://youtu.be/msGQOO6f3h0?si=_-O0Z_CDSuk2eKV_"
-                        allowfullscreen></iframe> -->
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/msGQOO6f3h0?si=_-O0Z_CDSuk2eKV_"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="container container-wrapper">
+        <div class="wrapper">
+            <!-- Seção de Texto -->
+            <section class="section-text">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mx-auto text-center">
+                        <h3>
+                            Com um toque, ele transforma <span class="highlight-green">R$ 100 em R$ 500!</span> Conheça o
+                            <span class="highlight-green">'Agente Financeiro'</span> que já ajuda brasileiros a lucrar em dólar
+                            sem entender nada de <span class="highlight-link">Bolsa de Valores</span>.
+                        </h3>
+                    </div>
                 </div>
             </section>
-
+    
+            <!-- Seção de Vídeo -->
+            <section class="section-video">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mx-auto text-center">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle play-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
             <!-- Seção de Call to Action (CTA) -->
-            <section class="section-cta text-center mb-5">
-                <h3>
-                    Interessado?<br>
-                    Entre em Contato!
-                </h3>
-                <button class="cta-btn btn btn-primary">
-                    Clique aqui
-                </button>
+            <section class="section-cta">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mx-auto text-center">
+                        <p>Quer saber o segredo para lucrar em dólar?</p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mx-auto text-center">
+                        <a class="btn cta-button">Clique agora e descubra!</a>
+                    </div>
+                </div>
             </section>
         </div>
-
     </div>
 
     <script src="./assets/libs/jquery/jquery-3.7.1.min.js"></script>
