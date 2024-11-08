@@ -57,6 +57,11 @@ body {
     font-size: 1.7rem;
   }
 }
+@media screen and (min-width: 1366px) {
+  .section-text h3 {
+    font-size: 1.8rem;
+  }
+}
 
 .section-cta p {
   font-family: "Open Sauce Two";
@@ -73,10 +78,6 @@ body {
   margin-top: 10px;
   font-family: "Open Sauce Two";
   font-weight: 800;
-  transition: box-shadow 0.5s ease;
-}
-.section-cta a.cta-button:hover {
-  box-shadow: 0 8px 15px #02D085;
 }
 
 .highlight-green {

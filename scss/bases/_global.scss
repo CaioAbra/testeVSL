@@ -58,6 +58,10 @@ body {
         @media screen and (max-width:768px) {
             font-size: 1.7rem;
         }
+
+        @media screen and (min-width:1366px) {
+            font-size: 1.8rem;
+        }
     }
 }
 
@@ -79,11 +83,11 @@ body {
         margin-top: 10px;
         font-family: 'Open Sauce Two';
         font-weight: 800;
-        transition: box-shadow .5s ease;
+        // transition: box-shadow .5s ease;
 
-        &:hover {
-            box-shadow: 0 8px 15px #02D085; // Sombra com base na cor do gradienteF
-        }
+        // &:hover {
+        //     box-shadow: 0 8px 15px #02D085; // Sombra com base na cor do gradienteF
+        // }
     }
 
 
