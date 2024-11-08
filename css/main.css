@@ -143,5 +143,19 @@ body {
   filter: blur(64px);
   z-index: -1;
 }
+@media screen and (max-width: 500px) {
+  .video-placeholder::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #B2FF8D -24.51%, #02D085 75.83%, #02D085 200.98%);
+    filter: blur(64px);
+    z-index: -1;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
